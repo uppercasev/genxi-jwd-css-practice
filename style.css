@@ -1,3 +1,7 @@
+body {
+  background-color: #adeecf;
+}
+
 header {
   text-align: center;
   padding: 2rem;
@@ -15,36 +19,59 @@ header {
 .task-1 {
   border: solid;
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 1;
 }
+
 .task-1 p {
   border: dotted;
   padding: 1rem;
+  display: flex;
+  flex-shrink: 1;
 }
 
 .task-2 {
   border: solid;
   padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 1;
+  
 }
+
 .task-2 p {
   border: dotted;
   padding: 1rem;
+  display: flex;
+  flex-shrink: 1;
 }
 
 .task-3 {
   border: solid;
   padding: 1rem;
+  background: burlywood;
+  justify-self: start;
 }
+
 .task-3 p {
   padding: 1rem;
+  background: burlywood;
 }
 
 .task-4 {
   border: solid;
   padding: 1rem;
+  justify-self: end;
 }
+
 .task-4 p {
   padding: 1rem;
-}
+  font-family: fantasy;
+  color: #8a2be2;
+  }
 
 .task-5 {
   border: solid;
@@ -58,4 +85,20 @@ header {
 }
 .task-6 p {
   padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15%
+}
+
+img {
+  height: 124px;
+}
+
+div.annoying-box {
+  display: flex;
+  justify-content: center;
 }
